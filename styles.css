@@ -49,15 +49,18 @@ h1, h2, h3, h4, h5, h6 {
 body {
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(52, 52, 52);
 }
 
 /* Left section of page */
 
 .left-section {
+    display: flex;
+    flex-direction: column;
     width: 40%;
     min-height: 100vh;
     background-image: url(background-image.jpg);
-    background-color: rgba(32, 67, 126);
+    background-color: rgb(32, 67, 126);
     background-size: cover;
 }
 
@@ -84,6 +87,21 @@ h1 {
     max-width: 100%;
 }
 
+.image-credit {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding: 5px;
+    font-family:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: rgb(201, 212, 231);
+}
+
+.image-credit > a {
+    color: white;
+}
+
+
 /* Right section of page */
 
 .right-section {
@@ -91,11 +109,19 @@ h1 {
     flex-direction: column;
     width: 60%;
     min-height: 100vh;
-    background-color: rgb(236, 233, 230);
+    background-color: rgb(250, 248, 245);
 }
 
 .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
     height: 35%;
+    width: 90%;
+    padding: 50px 40px;
+    font-size: 1.4em;
+    line-height: 1;
 }
 
 form {
@@ -106,12 +132,12 @@ form {
     gap: 15px 70px;
     flex-wrap: wrap;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 10%);
-    color: rgb(61, 61, 61);
 }
 
 h2 {
     display: block;
     width: 100%;
+    font-family:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
 }
 
 .form-field {
@@ -130,15 +156,21 @@ label {
 }
 
 input {
+    border: 1.5px solid rgb(190, 190, 190);
     border-radius: 3px;
 }
 
 input:focus {
-
+    border: 1.5px solid rgba(32, 67, 126);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 15%);
 }
 
 input:invalid {
     border: 1.5px solid rgb(209, 45, 4);
+}
+
+.buttons {
+    padding: 25px 40px;
 }
 
 button {
@@ -146,10 +178,16 @@ button {
     background-image: linear-gradient(rgba(32, 67, 126), rgb(37, 91, 144));
     border: none;
     border-radius: 5px;
-    padding: 12px 45px;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 15%);
+    margin-bottom: 2%;
 }
 
-a {
-     color: rgba(32, 67, 126);
+.buttons a {
+    color: rgba(32, 67, 126);
+}
+
+.buttons p {
+    font-family:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
 }
 
