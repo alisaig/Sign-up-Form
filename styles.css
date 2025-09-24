@@ -100,4 +100,34 @@ h1 {
 .form {
     height: 27%;
     background-color: rgb(245, 245, 245);
+    padding: 20px 40px;
 }
+
+form {
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field > label, input {
+    display: block;
+    width: 250px;
+}
+
+button {
+    color: white;
+    background-color: rgba(32, 67, 126);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 45px;
+}
+
+a {
+     color: rgba(32, 67, 126);
+}
+
