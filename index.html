@@ -22,32 +22,32 @@
         <form>
             <h2>Let's do this!</h2>
             <div class="form_field">
-                <label for="f_name">FIRST NAME</label>
+                <label for="f_name">FIRST NAME<span aria-label="required">*</span></label>
                 <input type="text" id="f_name" name="first_name" required />
             </div>
             <div class="form_field">
-                <label for="l_name">LAST NAME</label>
+                <label for="l_name">LAST NAME<span aria-label="required">*</span></label>
                 <input type="text" id="l_name" name="last_name" required />
             </div>
             <div class="form_field">
-                <label for="f_name">EMAIL</label>
-                <input type="email" id="email" name="email" required/>
+                <label for="f_name">EMAIL<span aria-label="required">*</span></label>
+                <input type="email" id="email" name="email" required />
             </div>
             <div class="form_field">
                 <label for="p_number">PHONE NUMBER</label>
                 <input type="tel" id="p_number" name="phone_num" minlength="8"/>
             </div>
             <div class="form_field">
-                <label for="pswrd">PASSWORD</label>
+                <label for="pswrd">PASSWORD<span aria-label="required">*</span></label>
                 <input type="password" id="pswrd" name="password" minlength="12" maxlength="128" required />
             </div>
             <div class="form_field">
-                <label for="p_number">CONFIRM PASSWORD</label>
+                <label for="p_number">CONFIRM PASSWORD<span aria-label="required">*</span></label>
                 <input type="password" id="xxx" name="xxx" required/>
             </div>
         </form>
         <div class="buttons">
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
             <p>Already have an account? <a id="login">Log in</a></p>
         </div>
     </div>
