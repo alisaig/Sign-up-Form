@@ -162,7 +162,7 @@ input {
     font-family:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
 }
 
-input:invalid {
+input:user-invalid {
     border: 1.5px solid rgb(209, 45, 4);
 }
 
