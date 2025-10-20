@@ -41,19 +41,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Main CSS */
-html {
-    /* height: 100%; */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
+
+/* Main CSS */
 
 body {
     display: flex;
-    /* height: 100%; */
     min-height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(52, 52, 52);
-    /* background-color: rgb(250, 248, 245); */
-    background-color: black;
+    background-color: rgb(250, 248, 245);
 }
 
 /* Left section of page */
@@ -62,7 +68,6 @@ body {
     display: flex;
     flex: 0 0 40%;
     flex-direction: column;
-    /* width: 40%; */
     height: auto;
     background-image: url(background-image.jpg);
     background-color: #20437e;
@@ -188,6 +193,7 @@ input + div {
 
 input:focus + div {
     display: block;
+    animation: 0.5s fadeInUp;
 }
 
 .buttons {
@@ -283,3 +289,5 @@ button:active {
         padding: 10px 100px;
     }
 }
+
+

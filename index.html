@@ -32,10 +32,12 @@
             <div class="form-field">
                 <label for="f_name">EMAIL<span aria-hidden="true">*</span></label>
                 <input type="email" id="email" name="email" required />
+                <div id="pswrd-hint">(MUST INCLUDE AN @ SYMBOL AND A DOMAIN)</div>
             </div>
             <div class="form-field">
                 <label for="p_number">PHONE NUMBER</label>
-                <input type="tel" id="p_number" name="phone_num" minlength="8"/>
+                <input type="tel" id="p_number" name="phone_num" minlength="8" aria-describedby="phone-hint"/>
+                <div id="pswrd-hint">(MUST BE AT LEAST 8 CHARACTERS LONG)</div>
             </div>
             <div class="form-field">
                 <label for="pswrd">PASSWORD<span aria-hidden="true">*</span></label>
@@ -51,8 +53,15 @@
                 <div id="pswrd-hint">(MUST BE AT LEAST 12 CHARACTERS LONG)</div>
             </div>
             <div class="form-field">
-                <label for="p_number">CONFIRM PASSWORD<span aria-hidden="true">*</span></label>
-                <input type="password" id="xxx" name="xxx" required/>
+                <label for="confirm_pswrd">CONFIRM PASSWORD<span aria-hidden="true">*</span></label>
+                <input 
+                    type="password"
+                    id="confirm_pswrd"
+                    name="confirm-password"
+                    required
+                    aria-describedby="c-pswrd-hint"
+                />
+                <div id="c-pswrd-hint">(RE-ENTER PASSWORD)</div>
             </div>
         </form>
         <div class="buttons">
