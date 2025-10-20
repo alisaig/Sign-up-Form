@@ -1,1 +1,17 @@
 # Sign-up Form Reflection
+
+I have learned a lot while working on this project, despite it being just a simple assignment for a small section of the course. Suprisingly, my biggest struggles didn't come from the form itself, but the layout of the page when adjusted for the screen size.
+
+Among everything, I had the easiest time with the form itself, and the background image. Implementing both was something new for me, but it wasn't too difficult. I had some minor trouble deciding about how to size the image so it didn't get distorted strangely when the screen size changes, and in the end I was pretty content with my solution. Matching the layout of the form to the reference image also took some time, but was relatively straightforward.
+
+Deciding on how to size the Odin logo and title was a bit difficult for me and I still cannot say that I'm fully satisifed with the end outcome. I wasn't sure whether I should dynamically adjust it with the size of the screen or keep it a fixed size, but I eventually decided to go with the latter. Ideally I should've looked at other websites for reference and that is what I shall do when working on a bigger project in the future.
+
+For sure the hardest part of the project was adding hints for the form fields and the layout of the page when adjusted for different screen sizes.
+
+Initially I considered adding the hints into the fields themselves, but after reading a few articles on best practices and accessibility I decided against it. This was because if the user starts entering something into the form field, the hint would disappear which would be inconvenient if they wanted to refer back to it. Alternatively, simply using a div for the hint that changed to **display:none** when the field wasn't in focus would've not worked for people using screen readers. Fortunately, after looking around I found out about the **aria-describedby** attribute, which would allow me to use **display:none** while still reading out the hint for the screen reader users and I went with that. I also looked up a simple fade in animation so the hint's entrance wasn't too jarring.
+
+The layout gave me the biggest headache as a lot of the content would just get cut off when the width of the screen shrunk. After hours of trying to determine the cause for this, I realized it was because of my mishandling of properties such as **min-height**. I was eager to use them after learning about them in earlier lessons and they did work well when I had my default screen size, but everything started to fall apart when the screen width would shrink. The solution to this ended up being to get rid of all the height properties and simply add a **flex-basis** percentage value for each section.
+
+After glancing at the other students' submissions, I also felt motivated to add some media queries, despite it being a topic saved for later lessons. I referenced the example used on one of the tutorials in the previous lessons and decided to only add a single query for one screen size cut-off. This did prove to be quite hard, mostly because of my previously mentioned height property problems, but eventually I ended up with a layout that works okay.
+
+This was an unexpectedly frustrating project, but I also gained a lot of new skills and I'm excited to continue with the rest of the course!
